@@ -1,16 +1,20 @@
-$primaryColor: #fff;
-$primaryAccent: #444;
+$primary-color: #2B331B; //background one
+$primary-accent: #FFD300; //border highlights
 
-$primaryBlack: #000;
+$primary-white: #fff;
+$primary-black: #0F0F0F;
+$secondary-black: #171B0E; //background two
 
-$translucentBlack: transparentize($primaryBlack, 0.4);
+
+
+$translucent-black: transparentize($primary-black, 0.4);
 
 $font-serif: serif;
-$font-sans-serif: sans-serif;
+$font-primary: 'Josefin Sans', sans-serif;
 
 
-$firstBreak: 1250px;
-$secondBreak: 1125px;
-$thirdBreak: 980px;
-$fourthBreak: 750px;
-$fifthBreak: 400px;
+$first-break: 1250px;
+$second-break: 1125px;
+$third-break: 980px;
+$fourth-break: 750px;
+$fifth-break: 400px;

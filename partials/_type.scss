@@ -1,7 +1,41 @@
 * {
-    font-family: $font-sans-serif;
+    font-family: $font-primary;
 }
 
 html {
     font-size: 62.5%;
+}
+
+
+h1 {
+    font-size: 6.9rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 4.5rem;
+    line-height: 99.8px;
+    font-weight: 400;
+}
+h3 {
+    font-size: 4rem;
+    line-height: 58px;
+    letter-spacing: 1.3px;
+}
+h4 {
+    font-size: 2.5rem;
+    line-height: 58px;
+    letter-spacing: 0.8px;
+}
+
+nav {
+    font-size: 2rem;
+    line-height: 29px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+button {
+    font-size: 2.24rem;
+    line-height: 41.6px;
 }
