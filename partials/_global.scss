@@ -1,0 +1,27 @@
+a,
+a:visited {
+    text-decoration: none;
+    border:none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 980px;
+    width: 85%;
+    margin: 0 auto;
+
+    @include media($thirdBreak){
+        width:95%;
+    }
+    @include media($fourthBreak){
+        width:100%;
+    }
+}
