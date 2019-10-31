@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +13,10 @@
 
     <title>The Restaurant Mall</title>
     <!-- A website by Miko Sramek -->
+
+    <script src="https://kit.fontawesome.com/97241a1aa1.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
         <nav>
@@ -28,30 +32,107 @@
     </header>
     <main>
         <section id="feature-section" class="feature-section">
-            <div class="feature">
-                <i></i>
-                <h2>Location</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi rem consequatur fugit odit cum. Doloremque consequuntur earum voluptates magni sapiente soluta libero voluptate? Laboriosam, consequuntur!</p>
+            <div class="wrapper">
+                <ul>
+                    <li class="feature">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h2>Location</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi rem consequatur fugit odit
+                            cum.
+                            Doloremque consequuntur earum voluptates magni sapiente soluta libero voluptate? Laboriosam,
+                            consequuntur!</p>
+                    </li>
+                    <li class="feature">
+                        <i class="fas fa-users"></i>
+                        <h2>Community</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ratione minima ullam eligendi
+                            earum aliquam neque nulla debitis mollitia eaque, consequuntur eum nesciunt, asperiores est!
+                        </p>
+                    </li>
+                    <li class="feature">
+                        <i class="fas fa-file"></i>
+                        <h2>Blog</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque illum incidunt expedita a
+                            animi modi! Nulla aspernatur nemo ea laborum quod, dolor sequi itaque illo!</p>
+                    </li>
+                    <li class="feature">
+                        <i class="fas fa-phone"></i>
+                        <h2>Get in touch</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, ipsa animi quis eaque
+                            delectus alias repudiandae magni tempora vel quia. Cupiditate provident fuga ad
+                            voluptatibus?
+                        </p>
+                    </li>
+                </ul>
+            </div> <!-- End of Wrapper -->
+        </section>
+
+        <section class="blog">
+            <div class="wrapper">
+                <article class="blog-post">
+                    <div class="blog-post-image">
+                        <img src="./assets/blog-post-image.jpg" alt=""> <!-- !!!! TO DO: ALT TEXT !!!! -->
+                    </div>
+                    <div class="blog-post-text">
+                        <h3>Best Borg</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam obcaecati mollitia nemo nisi eligendi illo, esse, id nostrum sapiente accusamus distinctio recusandae rem fuga natus.</p>
+                        <button>Read more</button>
+                    </div>
+                </article>
+
+                <!-- !!!! TO DO: ADD ONE MORE SECTION !!!! -->
             </div>
-            <div class="feature">
-                <i></i>
-                <h2>Community</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ratione minima ullam eligendi earum aliquam neque nulla debitis mollitia eaque, consequuntur eum nesciunt, asperiores est!</p>
-            </div>
-            <div class="feature">
-                <i></i>
-                <h2>Blog</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque illum incidunt expedita a animi modi! Nulla aspernatur nemo ea laborum quod, dolor sequi itaque illo!</p>
-            </div>
-            <div class="feature">
-                <i></i>
-                <h2>Get in touch</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, ipsa animi quis eaque delectus alias repudiandae magni tempora vel quia. Cupiditate provident fuga ad voluptatibus?</p>
-            </div>
+        </section>
+        <section class="contest">
+            <div class="wrapper">
+                <h2>Win a $100 gift card</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum repellendus maxime id fuga doloribus eum nisi ipsum. Necessitatibus officia quas quae, similique temporibus totam? Odit nihil vel repellendus facilis placeat.</p>
+                <button>Find out more</button>
+            </div> <!-- End of Wrapper -->
+        </section>
+
+        <section class="body-hero">
+            <!-- Full bleed image -->
+        </section>
+
+        <section class="about">
+            <div class="wrapper">
+                <div class="flex-container">
+                    <div class="about-image">
+                        <img src="./assets/square-image.jpg" alt=""> <!-- !!!! TO DO: ALT TEXT !!!! -->
+                    </div>
+                    <div class="about-text">
+                        <h2>Win a $100 gift card</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum repellendus maxime id fuga doloribus eum nisi ipsum. Necessitatibus officia quas quae, similique temporibus totam? Odit nihil vel repellendus facilis placeat.</p>
+                        <button>Find out more</button>
+                    </div>
+                </div> <!-- End of about Flex Container -->
+            </div> <!-- End of Wrapper -->
+        </section>
+
+        <!-- !!!! TO DO: ALT TEXT !!!! -->
+        <section class="gallery">
+            <!-- Start of Wrapper -->
+            <div class="wrapper">
+                <ul class="flex-container">
+                    <li>
+                        <div class="gallery-image"><img src="./assets/gallery-image-1.jpg" alt=""></div>
+                    </li>
+                    <li>
+                        <div class="gallery-image"><img src="./assets/gallery-image-2.jpg" alt=""></div>
+                    </li>
+                    <li>
+                        <div class="gallery-image"><img src="./assets/gallery-image-3.jpg" alt=""></div>
+                    </li>
+                </ul>
+            </div> <!-- End of Wrapper -->
         </section>
     </main>
     <footer>
-        
+        <div class="wrapper">
+            <p>Copyright © 2019 Juno College</p>
+        </div>
     </footer>
 </body>
+
 </html>
