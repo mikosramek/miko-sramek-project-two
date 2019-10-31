@@ -1,0 +1,76 @@
+header {
+  @include linear-from-to(bottom right, $primary-color ,$secondary-color, 4);
+  position: relative;
+  min-height: 95vh;
+  background-image: url("../assets/home-header.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  padding-top: 50px;
+  span {
+    display: block;
+    color: $primary-black;
+    position: relative;
+    z-index: 2;
+    margin: 10px 0;
+  }
+  span::after {
+    content: '';
+    position: absolute;
+    background-color: $primary-white;
+    width: 360px;
+    left: -5px;
+    top: -5px;
+    bottom: 5px;
+    z-index: -1;
+  }
+  ul.flex-container {
+    display: flex;
+  }
+  li {
+    margin-right: 25px;
+    position: relative;
+  }
+}
+h1 {
+  padding-top: 100px;
+  margin: 0;
+}
+.header-overlay-image {
+  position: absolute;
+  right: 0;bottom: -150px;
+  width: 50%;
+}
+
+
+
+
+ul .active-page{
+  position: relative;
+  &::after {
+    content: '';
+    height: 3px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    background-color: $primary-accent;
+    bottom:-10px;
+  }
+}
+
+.circle {
+  position: absolute;
+  left: -15px;
+  bottom: 0;
+  width:150%;
+  height: 150%;
+  z-index: 0;
+  path {
+    stroke-dasharray: 460;
+    stroke-dashoffset: 460;
+    transition: stroke-dashoffset 0.3s;
+    stroke: $primary-accent;
+  }
+}
+a:hover > .circle>path {
+  stroke-dashoffset: 0;
+}

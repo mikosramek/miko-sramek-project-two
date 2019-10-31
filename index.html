@@ -19,51 +19,95 @@
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <h1>The <span>Restaurant</span> Mall</h1>
-        <img src="./assets/home-box-header.png" alt="A plated salad in front of a restaurant full of people dining.">
+        <!-- Start of Wrapper -->
+        <div class="wrapper">
+            <nav>
+                <ul class="flex-container">
+                    <li><a href="#" class="active-page">Home</a></li>
+                    <li><a href="#">
+                        About
+                        </a>  
+                    </li>
+                    <li>
+                        <a href="#">
+                            Blog
+                            <svg class="circle"xmlns="http://www.w3.org/2000/svg" width="152" height="76" viewBox="0 0 152 76">
+                                <path fill="none" stroke="#FFF" stroke-width="2" d="M0,39.2226562 C107.065104,10.9570312 157.265625,10.9570312 150.601562,39.2226562 C140.605469,81.6210937 56.1796875,81.6210937 27.1132812,64.5 C7.73567708,53.0859375 25.6223958,31.9401042 80.7734375,1.0625"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Contact
+                            <svg class="circle"xmlns="http://www.w3.org/2000/svg" width="152" height="76" viewBox="0 0 152 76">
+                                <path fill="none" stroke="#FFF" stroke-width="2" d="M0,39.2226562 C107.065104,10.9570312 157.265625,10.9570312 150.601562,39.2226562 C140.605469,81.6210937 56.1796875,81.6210937 27.1132812,64.5 C7.73567708,53.0859375 25.6223958,31.9401042 80.7734375,1.0625"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul> <!-- End of Flex Container -->
+            </nav>
+            <h1>The <span>Restaurant</span> Mall</h1>
+            <div class="header-overlay-image">
+                <img src="./assets/home-box-header.png"
+                    alt="A plated salad in front of a restaurant full of people dining.">
+            </div>
+        </div> <!-- End of Wrapper -->
     </header>
     <main>
         <section id="feature-section" class="feature-section">
+            <!-- Start of Wrapper -->
             <div class="wrapper">
-                <ul>
-                    <li class="feature">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <h2>Location</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi rem consequatur fugit odit
-                            cum.
-                            Doloremque consequuntur earum voluptates magni sapiente soluta libero voluptate? Laboriosam,
-                            consequuntur!</p>
+                <!-- Start of  Flex Container -->
+                <ul class="flex-container">
+                    <li class="feature feature-flex-container">
+                        <!-- !!!! TO DO: ARIA LABEL OR ARIA HIDDEN !!!! -->
+                        <div class="feature-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div> <!-- End of Icon Div -->
+                        <div class="feature-text">
+                            <h2>Location</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi rem consequatur fugit odit
+                                cum.
+                                Doloremque consequuntur earum voluptates magni sapiente soluta libero voluptate? Laboriosam,
+                                consequuntur!
+                            </p>
+                        </div> <!-- End of Text Div -->
                     </li>
-                    <li class="feature">
-                        <i class="fas fa-users"></i>
-                        <h2>Community</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ratione minima ullam eligendi
-                            earum aliquam neque nulla debitis mollitia eaque, consequuntur eum nesciunt, asperiores est!
-                        </p>
+                    <li class="feature feature-flex-container">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div> <!-- End of Icon Div -->
+                        <div class="feature-text">
+                            <h2>Community</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ratione minima ullam eligendi
+                                earum aliquam neque nulla debitis mollitia eaque, consequuntur eum nesciunt, asperiores est!
+                            </p>
+                        </div> <!-- End of Text Div -->
                     </li>
-                    <li class="feature">
-                        <i class="fas fa-file"></i>
-                        <h2>Blog</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque illum incidunt expedita a
-                            animi modi! Nulla aspernatur nemo ea laborum quod, dolor sequi itaque illo!</p>
+                    <li class="feature feature-flex-container">
+                        <div class="feature-icon">
+                            <i class="fas fa-file"></i>
+                        </div> <!-- End of Icon Div -->
+                        <div class="feature-text">
+                            <h2>Blog</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque illum incidunt expedita a
+                                animi modi! Nulla aspernatur nemo ea laborum quod, dolor sequi itaque illo!
+                            </p>
+                        </div> <!-- End of Text Div -->
                     </li>
-                    <li class="feature">
-                        <i class="fas fa-phone"></i>
-                        <h2>Get in touch</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, ipsa animi quis eaque
-                            delectus alias repudiandae magni tempora vel quia. Cupiditate provident fuga ad
-                            voluptatibus?
-                        </p>
+                    <li class="feature feature-flex-container">
+                        <div class="feature-icon">
+                            <i class="fas fa-phone"></i>
+                        </div> <!-- End of Icon Div -->
+                        <div class="feature-text">
+                            <h2>Get in touch</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, ipsa animi quis eaque
+                                delectus alias repudiandae magni tempora vel quia. Cupiditate provident fuga ad
+                                voluptatibus?
+                            </p>
+                        </div> <!-- End of Text Div -->
                     </li>
-                </ul>
+                </ul> <!-- End of Flex Container -->
             </div> <!-- End of Wrapper -->
         </section>
 
@@ -71,11 +115,13 @@
             <div class="wrapper">
                 <article class="blog-post">
                     <div class="blog-post-image">
-                        <img src="./assets/blog-post-image.jpg" alt=""> <!-- !!!! TO DO: ALT TEXT !!!! -->
+                        <img src="./assets/left-image.jpg" alt="" class="shadow-right"> <!-- !!!! TO DO: ALT TEXT !!!! -->
                     </div>
                     <div class="blog-post-text">
                         <h3>Best Borg</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam obcaecati mollitia nemo nisi eligendi illo, esse, id nostrum sapiente accusamus distinctio recusandae rem fuga natus.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam obcaecati mollitia nemo
+                            nisi eligendi illo, esse, id nostrum sapiente accusamus distinctio recusandae rem fuga
+                            natus.</p>
                         <button>Read more</button>
                     </div>
                 </article>
@@ -86,7 +132,9 @@
         <section class="contest">
             <div class="wrapper">
                 <h2>Win a $100 gift card</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum repellendus maxime id fuga doloribus eum nisi ipsum. Necessitatibus officia quas quae, similique temporibus totam? Odit nihil vel repellendus facilis placeat.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum repellendus maxime id fuga
+                    doloribus eum nisi ipsum. Necessitatibus officia quas quae, similique temporibus totam? Odit nihil
+                    vel repellendus facilis placeat.</p>
                 <button>Find out more</button>
             </div> <!-- End of Wrapper -->
         </section>
@@ -96,16 +144,20 @@
         </section>
 
         <section class="about">
+            <!-- Start of Wrapper -->
             <div class="wrapper">
+                <!-- Start of Flex Container -->
                 <div class="flex-container">
+                    <!-- Start of Image Div -->
                     <div class="about-image">
-                        <img src="./assets/square-image.jpg" alt=""> <!-- !!!! TO DO: ALT TEXT !!!! -->
-                    </div>
+                        <img src="./assets/square-image.jpg" alt="" class="shadow-left"> <!-- !!!! TO DO: ALT TEXT !!!! -->
+                    </div> <!-- End of Image Div -->
+                    <!-- Start of Text Div -->
                     <div class="about-text">
-                        <h2>Win a $100 gift card</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum repellendus maxime id fuga doloribus eum nisi ipsum. Necessitatibus officia quas quae, similique temporibus totam? Odit nihil vel repellendus facilis placeat.</p>
+                        <h2>Bringing nature into spaces</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum harum rem ea natus tenetur veritatis numquam doloremque placeat ut nulla, at voluptatum, soluta necessitatibus! Quis dolorum natus consequuntur. Autem rerum harum tempore corrupti, qui totam dolorem accusamus voluptates consectetur, asperiores aperiam voluptate vel perferendis eligendi itaque quod at eveniet nemo. Dolore a aperiam, hic laborum neque maxime cupiditate voluptate totam, ipsam maiores, explicabo quidem iste at ex quaerat sunt ea!</p>
                         <button>Find out more</button>
-                    </div>
+                    </div> <!-- End of Text Div -->
                 </div> <!-- End of about Flex Container -->
             </div> <!-- End of Wrapper -->
         </section>

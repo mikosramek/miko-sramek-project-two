@@ -8,14 +8,16 @@ a:visited {
 img {
     width: 100%;
     display: block;
+    //At a future breakpoint make it: height 100% && object-fit cover
 }
 ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .wrapper {
-    max-width: 1080px;
-    width: 85%;
+    max-width: 1280px;
+    width: 90%;
     margin: 0 auto;
 }
