@@ -260,6 +260,7 @@ html {
 h1 {
   font-size: 6.9rem;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -297,9 +298,21 @@ p {
   margin: 0;
 }
 
+.contact-form {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.contact-flex-container li,
+.contact-flex-container li a {
+  font-weight: 200;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
 button {
   font-size: 2.24rem;
   line-height: 41.6px;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 /* Global Styles */
@@ -333,8 +346,6 @@ header {
   background: linear-gradient(to bottom right, #2B331B, #262d18, #212715, #1c2111, #171B0E);
   position: relative;
   min-height: 95vh;
-  background-image: url("../assets/home-header.jpg");
-  background-attachment: fixed;
   background-size: cover;
   padding-top: 50px;
 }
@@ -351,7 +362,7 @@ header span::after {
   content: '';
   position: absolute;
   background-color: #fff;
-  width: 360px;
+  width: 470px;
   left: -5px;
   top: -5px;
   bottom: 5px;
@@ -374,6 +385,20 @@ h1 {
   margin: 0;
 }
 
+.index-header {
+  background-image: url("../assets/home-header.jpg");
+}
+
+.blog-header {
+  background-image: url("../assets/blog-header.jpg");
+  background-position: center;
+}
+
+.contact-header {
+  background-image: url("../assets/contact-header.jpg");
+  background-position: right;
+}
+
 .header-overlay-image {
   position: absolute;
   right: 0;
@@ -391,7 +416,7 @@ ul:hover li:hover::after {
 }
 
 a:focus {
-  outline: 2px dotted #FFD300;
+  outline: 1px dotted #FFD300;
 }
 
 .page-active,
@@ -421,7 +446,7 @@ a:focus {
 
 .circle {
   position: absolute;
-  left: -15px;
+  left: -35%;
   bottom: 0;
   width: 150%;
   height: 150%;
@@ -453,6 +478,16 @@ button {
   cursor: pointer;
 }
 
+.shadow-left {
+  -webkit-box-shadow: -15px 15px 0 #FFD300;
+          box-shadow: -15px 15px 0 #FFD300;
+}
+
+.shadow-right {
+  -webkit-box-shadow: 15px 15px 0 #FFD300;
+          box-shadow: 15px 15px 0 #FFD300;
+}
+
 /* Index Styles */
 .index-about button,
 .index-contest button {
@@ -468,16 +503,6 @@ button {
 .index-blog button:hover {
   background-color: #0F0F0F;
   color: #FFD300;
-}
-
-.shadow-left {
-  -webkit-box-shadow: -15px 15px 0 #FFD300;
-          box-shadow: -15px 15px 0 #FFD300;
-}
-
-.shadow-right {
-  -webkit-box-shadow: 15px 15px 0 #FFD300;
-          box-shadow: 15px 15px 0 #FFD300;
 }
 
 .index-feature-section {
@@ -682,6 +707,82 @@ button {
 
 /* Blog Styles */
 /* Contact Styles */
+.contact {
+  position: relative;
+  padding-bottom: 150px;
+}
+
+.contact-social-links {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-social-links li {
+  margin-right: 25px;
+}
+
+.contact-social-links i {
+  color: #FFD300;
+  font-size: 2.5rem;
+}
+
+.contact-flex-container {
+  padding: 0;
+  margin: 0;
+  width: 30%;
+}
+
+.contact-flex-container > li {
+  padding-bottom: 25px;
+}
+
+.contact-address li {
+  padding-bottom: 5px;
+}
+
+.contact-form {
+  position: absolute;
+  background: #171B0E;
+  right: 5%;
+  top: -100px;
+  width: 50%;
+  padding: 25px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background-color: #171B0E;
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 10px;
+  padding: 20px;
+}
+
+.contact-form button {
+  margin: 10px;
+  width: calc(100% - 20px);
+  background-color: #FFD300;
+  padding: 0px 5px;
+}
+
+.contact-form-user {
+  border: none;
+  width: calc(50% - 20px);
+  float: left;
+  border-bottom: 1px solid #FFD300;
+}
+
+.contact-form-message {
+  border: 1px solid #FFD300;
+  clear: both;
+  display: block;
+  width: calc(100% - 20px);
+  height: 250px;
+  resize: none;
+}
+
 /* Footer Styles */
 footer {
   background-color: #0F0F0F;
