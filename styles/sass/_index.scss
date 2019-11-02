@@ -1,0 +1,163 @@
+.index-about button,
+.index-contest button {
+  background-color: $primary-black;
+  color: $primary-white;
+}
+.index-blog button {
+  background-color: $primary-accent;
+  color: $primary-black;
+  &:hover {
+    background-color: $primary-black;
+    color: $primary-accent;
+  }
+}
+
+.shadow-left {
+  box-shadow: -15px 15px 0 $primary-accent;
+}
+.shadow-right {
+  box-shadow: 15px 15px 0 $primary-accent;
+}
+
+.index-feature-section {
+  padding: 200px 0 100px;
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      flex-basis: 48%;
+      position: relative;
+    }
+    li:nth-of-type(2n){
+      margin-left: 2%;
+    }
+  }
+  .index-feature-flex-container {
+    margin-bottom: 50px;
+    display: flex;
+  }
+  .index-feature-icon {
+    flex-shrink: 0;
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+    font-size: 2.5rem;
+    
+    color: $primary-black;
+    background-color: $primary-accent;
+
+    margin: 0px 15px 20px 0;
+  }
+  i {
+    @include absolute-fill;
+    text-align: center;
+    padding-top: 12.5px;
+  }
+}
+.index-contest h2,
+.index-about h2 {
+  color: $primary-accent;
+}
+.index-blog-post-text,
+.index-about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  p {
+    flex-grow: 1;
+  }
+  button {
+    align-self: flex-start;
+    margin-bottom: 25px;
+  }
+}
+
+.index-blog {
+  background-color: $secondary-color;
+  .index-blog-post {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 150px;
+    padding: 10px 0;
+    h3 {
+      margin-top: 50px;
+    }
+    img {
+      max-height: 400px;
+      object-fit: cover;
+    }
+    .index-blog-left.index-blog-post-image {
+      position: relative;
+      top: -45px;
+    }
+    .index-blog-right.index-blog-post-image {
+      position: relative;
+      bottom: -50px;
+    }
+    .index-blog-post-text {
+      width: calc(85% - 25px);
+      max-width: calc(1280px/2);
+    }
+    .index-blog-left.index-blog-post-text {
+      order: -1;
+      text-align: right;
+      justify-self: end;
+      button {
+        align-self: flex-end;
+      }
+    }
+  }
+}
+
+.index-contest {
+  text-align: center;
+  padding: 150px;
+  p {
+    width: 80%;
+    text-align: left;
+    margin: 0 auto;
+    padding: 25px 0;
+  }
+}
+
+.index-body-hero {
+  width: 100%;
+  height: 300px;
+  background: url("../assets/banner.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.index-about {
+  padding: 100px 0;
+  .flex-container{
+    display: flex;
+  }
+  .index-about-image {
+    flex-basis: calc(100%/4);
+    flex-shrink: 0;
+    padding-right: 2.75%;
+  }
+  .index-about-text {
+    padding-left: 1.25%;
+  }
+  button {
+    margin: 0;
+  }
+}
+
+.index-gallery {
+  padding: 50px 0;
+  background-color: $secondary-color;
+  .flex-container {
+    display: flex;
+  }
+  li:nth-of-type(2) {
+    margin: 0 4%;
+  }
+}
+
+

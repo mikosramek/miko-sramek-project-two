@@ -42,15 +42,19 @@ h1 {
 }
 
 
-ul:hover {
+ul:hover{
   .page-active::after,
   .page-not-active::after {
     width: 0;
   }
-  li:hover::after {
+  li:hover::after{
     width: 100%;
   }
 }
+a:focus{
+  outline: 2px dotted $primary-accent;
+}
+
 .page-active,
 .page-not-active{
   position: relative;
@@ -85,6 +89,7 @@ ul:hover {
     stroke: $primary-accent;
   }
 }
-a:hover > .circle>path {
+a:hover > .circle>path,
+a:focus > .circle>path {
   stroke-dashoffset: 0;
 }
