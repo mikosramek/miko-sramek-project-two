@@ -627,7 +627,7 @@ button {
 
 .index-blog .index-blog-post .index-blog-post-text {
   width: calc(85% - 25px);
-  max-width: calc(1280px/2);
+  max-width: calc((1280px/2) - 75px);
 }
 
 .index-blog .index-blog-post .index-blog-left.index-blog-post-text {

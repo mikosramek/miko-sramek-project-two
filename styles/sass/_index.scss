@@ -94,7 +94,7 @@
     }
     .index-blog-post-text {
       width: calc(85% - 25px);
-      max-width: calc(1280px/2);
+      max-width: calc((1280px/2) - 75px);
     }
     .index-blog-left.index-blog-post-text {
       order: -1;
