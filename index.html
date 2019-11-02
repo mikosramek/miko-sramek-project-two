@@ -8,7 +8,7 @@
 
 
 
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow|Josefin+Sans:400,600,700&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='styles/style.css'>
 
     <title>The Restaurant Mall</title>
@@ -23,24 +23,28 @@
         <div class="wrapper">
             <nav>
                 <ul class="flex-container">
-                    <li><a href="#" class="active-page">Home</a></li>
-                    <li><a href="#">
-                        About
-                        </a>  
+                    <li class="page-active"><a href="#">Home</a></li>
+                    <li class="page-not-active"><a href="#">
+                            About
+                        </a>
                     </li>
                     <li>
                         <a href="#">
                             Blog
-                            <svg class="circle"xmlns="http://www.w3.org/2000/svg" width="152" height="76" viewBox="0 0 152 76">
-                                <path fill="none" stroke="#FFF" stroke-width="2" d="M0,39.2226562 C107.065104,10.9570312 157.265625,10.9570312 150.601562,39.2226562 C140.605469,81.6210937 56.1796875,81.6210937 27.1132812,64.5 C7.73567708,53.0859375 25.6223958,31.9401042 80.7734375,1.0625"/>
+                            <svg class="circle" xmlns="http://www.w3.org/2000/svg" width="152" height="76"
+                                viewBox="0 0 152 76">
+                                <path fill="none" stroke="#FFF" stroke-width="2"
+                                    d="M0,39.2226562 C107.065104,10.9570312 157.265625,10.9570312 150.601562,39.2226562 C140.605469,81.6210937 56.1796875,81.6210937 27.1132812,64.5 C7.73567708,53.0859375 25.6223958,31.9401042 80.7734375,1.0625" />
                             </svg>
                         </a>
                     </li>
                     <li>
                         <a href="#">
                             Contact
-                            <svg class="circle"xmlns="http://www.w3.org/2000/svg" width="152" height="76" viewBox="0 0 152 76">
-                                <path fill="none" stroke="#FFF" stroke-width="2" d="M0,39.2226562 C107.065104,10.9570312 157.265625,10.9570312 150.601562,39.2226562 C140.605469,81.6210937 56.1796875,81.6210937 27.1132812,64.5 C7.73567708,53.0859375 25.6223958,31.9401042 80.7734375,1.0625"/>
+                            <svg class="circle" xmlns="http://www.w3.org/2000/svg" width="152" height="76"
+                                viewBox="0 0 152 76">
+                                <path fill="none" stroke="#FFF" stroke-width="2"
+                                    d="M0,39.2226562 C107.065104,10.9570312 157.265625,10.9570312 150.601562,39.2226562 C140.605469,81.6210937 56.1796875,81.6210937 27.1132812,64.5 C7.73567708,53.0859375 25.6223958,31.9401042 80.7734375,1.0625" />
                             </svg>
                         </a>
                     </li>
@@ -68,7 +72,8 @@
                             <h2>Location</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi rem consequatur fugit odit
                                 cum.
-                                Doloremque consequuntur earum voluptates magni sapiente soluta libero voluptate? Laboriosam,
+                                Doloremque consequuntur earum voluptates magni sapiente soluta libero voluptate?
+                                Laboriosam,
                                 consequuntur!
                             </p>
                         </div> <!-- End of Text Div -->
@@ -79,8 +84,10 @@
                         </div> <!-- End of Icon Div -->
                         <div class="feature-text">
                             <h2>Community</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ratione minima ullam eligendi
-                                earum aliquam neque nulla debitis mollitia eaque, consequuntur eum nesciunt, asperiores est!
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ratione minima ullam
+                                eligendi
+                                earum aliquam neque nulla debitis mollitia eaque, consequuntur eum nesciunt, asperiores
+                                est!
                             </p>
                         </div> <!-- End of Text Div -->
                     </li>
@@ -101,7 +108,8 @@
                         </div> <!-- End of Icon Div -->
                         <div class="feature-text">
                             <h2>Get in touch</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, ipsa animi quis eaque
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, ipsa animi quis
+                                eaque
                                 delectus alias repudiandae magni tempora vel quia. Cupiditate provident fuga ad
                                 voluptatibus?
                             </p>
@@ -112,22 +120,40 @@
         </section>
 
         <section class="blog">
-            <div class="wrapper">
-                <article class="blog-post">
-                    <div class="blog-post-image">
-                        <img src="./assets/left-image.jpg" alt="" class="shadow-right"> <!-- !!!! TO DO: ALT TEXT !!!! -->
+            <!-- <div class="wrapper"> -->
+            <article class="blog-post">
+                <div class="blog-left blog-post-image">
+                    <!-- !!!! TO DO: ALT TEXT !!!! -->
+                    <div class="">
+                        <img src="./assets/left-image.jpg" alt="" class="shadow-right">
                     </div>
-                    <div class="blog-post-text">
-                        <h3>Best Borg</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam obcaecati mollitia nemo
-                            nisi eligendi illo, esse, id nostrum sapiente accusamus distinctio recusandae rem fuga
-                            natus.</p>
-                        <button>Read more</button>
+                </div>
+                <div class="blog-post-text blog-right">
+                    <h3>Best borgs</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam obcaecati mollitia nemo
+                        nisi eligendi illo, esse, id nostrum sapiente accusamus distinctio recusandae rem fuga
+                        natus.</p>
+                    <button>Read more</button>
+                </div>
+            </article>
+            <article class="blog-post">
+                <div class="blog-right blog-post-image">
+                    <!-- !!!! TO DO: ALT TEXT !!!! -->
+                    <div class="">
+                        <img src="./assets/right-image.jpg" alt="" class="shadow-left">
                     </div>
-                </article>
+                </div>
+                <div class="blog-post-text blog-left">
+                    <h3>Try something new</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam obcaecati mollitia nemo
+                        nisi eligendi illo, esse, id nostrum sapiente accusamus distinctio recusandae rem fuga
+                        natus.</p>
+                    <button>Read more</button>
+                </div>
+            </article>
 
-                <!-- !!!! TO DO: ADD ONE MORE SECTION !!!! -->
-            </div>
+            <!-- !!!! TO DO: ADD ONE MORE SECTION !!!! -->
+            <!-- </div>End of Wrapper -->
         </section>
         <section class="contest">
             <div class="wrapper">
@@ -150,12 +176,18 @@
                 <div class="flex-container">
                     <!-- Start of Image Div -->
                     <div class="about-image">
-                        <img src="./assets/square-image.jpg" alt="" class="shadow-left"> <!-- !!!! TO DO: ALT TEXT !!!! -->
+                        <img src="./assets/square-image.jpg" alt="" class="shadow-left">
+                        <!-- !!!! TO DO: ALT TEXT !!!! -->
                     </div> <!-- End of Image Div -->
                     <!-- Start of Text Div -->
                     <div class="about-text">
                         <h2>Bringing nature into spaces</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum harum rem ea natus tenetur veritatis numquam doloremque placeat ut nulla, at voluptatum, soluta necessitatibus! Quis dolorum natus consequuntur. Autem rerum harum tempore corrupti, qui totam dolorem accusamus voluptates consectetur, asperiores aperiam voluptate vel perferendis eligendi itaque quod at eveniet nemo. Dolore a aperiam, hic laborum neque maxime cupiditate voluptate totam, ipsam maiores, explicabo quidem iste at ex quaerat sunt ea!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum harum rem ea natus tenetur
+                            veritatis numquam doloremque placeat ut nulla, at voluptatum, soluta necessitatibus! Quis
+                            dolorum natus consequuntur. Autem rerum harum tempore corrupti, qui totam dolorem accusamus
+                            voluptates consectetur, asperiores aperiam voluptate vel perferendis eligendi itaque quod at
+                            eveniet nemo. Dolore a aperiam, hic laborum neque maxime cupiditate voluptate totam, ipsam
+                            maiores, explicabo quidem iste at ex quaerat sunt ea!</p>
                         <button>Find out more</button>
                     </div> <!-- End of Text Div -->
                 </div> <!-- End of about Flex Container -->
