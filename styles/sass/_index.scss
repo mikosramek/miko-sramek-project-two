@@ -1,14 +1,39 @@
-.index-about button,
-.index-contest button {
+.index .button{
+  transition: transform 0.3s;
+  display : inline-block;
+  text-align: center;
+  &:hover,
+  &:focus {
+      transform: scale(1.05);
+  }
+}
+.index-about .button,
+.index-contest .button {
   background-color: $primary-black;
   color: $primary-white;
+  &:hover,
+  &:focus {
+    background-color: $primary-white;
+    color: $primary-black;
+    box-shadow: 0 0px 10px 1px $primary-black;
+  }
+  &:active {
+    color: $translucent-black;
+    box-shadow: 0 0px 5px 1px $translucent-black;
+  }
 }
-.index-blog button {
+.index-blog .button {
   background-color: $primary-accent;
   color: $primary-black;
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $primary-black;
     color: $primary-accent;
+    box-shadow: 0 0px 10px 1px $primary-accent;
+  }
+  &:active {
+    color: $dark-accent;
+    box-shadow: 0 0px 5px 1px $dark-accent;
   }
 }
 
@@ -63,7 +88,7 @@
   p {
     flex-grow: 1;
   }
-  button {
+  .button {
     align-self: flex-start;
     margin-bottom: 25px;
   }
@@ -100,7 +125,7 @@
       order: -1;
       text-align: right;
       justify-self: end;
-      button {
+      .button {
         align-self: flex-end;
       }
     }
@@ -109,7 +134,7 @@
 
 .index-contest {
   text-align: center;
-  padding: 150px;
+  padding: 100px;
   p {
     width: 80%;
     text-align: left;
@@ -139,7 +164,7 @@
   .index-about-text {
     padding-left: 1.25%;
   }
-  button {
+  .button {
     margin: 0;
   }
 }

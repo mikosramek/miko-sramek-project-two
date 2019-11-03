@@ -64,15 +64,20 @@
         </div> <!-- End of Wrapper -->
     </header>
     <main class="contact">
-        <aside class="contact-info">
-            <div class="wrapper">
+        <div class="wrapper">
+            <aside class="contact-info">
+
                 <ul class="contact-flex-container">
                     <li>
                         <ul class="contact-social-links">
-                            <li><a href="https://www.facebook.com/" target="_blank"><i class='fab fa-facebook-f' aria-label="Visit our Facebook page."></i></a></li>
-                            <li><a href="https://www.instagram.com/?hl=en" target="_blank"><i class='fab fa-instagram' aria-label="Visit our Instagram."></i></a></li>
-                            <li><a href="https://twitter.com/" target="_blank"><i class='fab fa-twitter' aria-label="Visit our Twitter."></i></a></li>
-                            <li><a href="https://www.whatsapp.com/" target="_blank"><i class='fab fa-whatsapp' aria-label="Contact us via Whats App."></i></a></li>
+                            <li><a href="https://www.facebook.com/" target="_blank"><i class='fab fa-facebook-f'
+                                        aria-label="Visit our Facebook page."></i></a></li>
+                            <li><a href="https://www.instagram.com/?hl=en" target="_blank"><i class='fab fa-instagram'
+                                        aria-label="Visit our Instagram."></i></a></li>
+                            <li><a href="https://twitter.com/" target="_blank"><i class='fab fa-twitter'
+                                        aria-label="Visit our Twitter."></i></a></li>
+                            <li><a href="https://www.whatsapp.com/" target="_blank"><i class='fab fa-whatsapp'
+                                        aria-label="Contact us via Whats App."></i></a></li>
                         </ul>
                     </li>
                     <li>
@@ -87,19 +92,21 @@
                         </ul>
                     </li>
                 </ul>
-            </div>
-        </aside>
-        <section class="contact-form shadow-right">
-            <form action="submit" class="clearfix">
-                <label for="name" class="visuallyhidden">Name:</label>
-                    <input type="text" name="name" id="name" class="contact-form-user" placeholder="Name">
-                <label for="email" class="visuallyhidden">Email:</label>
-                    <input type="text" name="email" id="email" class="contact-form-user" placeholder="Email">
-                <label for="message" class="visuallyhidden">Message:</label>
-                    <textarea type="text" name="message" id="message" class="contact-form-message" placeholder="Message"></textarea>
-                <button type="submit">Submit</button>
-            </form>
-        </section>
+
+            </aside>
+            <section class="shadow-right contact-form">
+                <form action="submit" class="clearfix form">
+                    <label for="name" class="visuallyhidden">Name:</label>
+                    <input type="text" name="name" id="name" class="form-user" placeholder="Name" required>
+                    <label for="email" class="visuallyhidden">Email:</label>
+                    <input type="email" name="email" id="email" class="form-user" placeholder="Email" required>
+                    <label for="message" class="visuallyhidden">Message:</label>
+                    <textarea type="text" name="message" id="message" class="form-message" placeholder="Message"
+                        required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </div>
     </main>
     <footer>
         <div class="wrapper">

@@ -3,7 +3,7 @@
 }
 
 .blog-aside {
-  flex-basis: 35%;
+  flex-basis: 40%;
   padding-top: 125px;
   h4 {
     color: $primary-accent;
@@ -11,17 +11,32 @@
     margin-bottom: 0;
   }
   ul {
-    list-style-type: disc;
+    list-style-type: none;
     padding-left: 10px;
+    
+    
   }
   li {
     padding: 5px 0;
+    padding-left: 10px;
+    position: relative;
+    &::before {
+      content:'';
+      position: absolute;
+      left: -10px;
+      top: 15px;
+      display: block;
+      height: 5px;
+      width: 5px;
+      border-radius: 50%;
+      background-color: $primary-white;
+    }
   }
 }
 .blog-aside-wrapper {
   // width: 90%; 
   display: grid;
-  grid-template-columns: repeat(10, 10%);
+  grid-template-columns: repeat(5, 20%);
   // margin-left: 20px;
   margin-right: 80px;
 }
@@ -47,9 +62,20 @@
   grid-column: 2 / -1;
   background-color: $secondary-color;
   padding: 0 20px;
+  padding-bottom: 30px;
+  p{
+    line-height: 30px;
+  }
+  h4:nth-of-type(2){
+    margin-top: 75px;
+  }
 }
+.blog-aside-text-justified {
+  text-align: justify;
+}
+
 .blog-post {
-  flex-basis: 65%;
+  flex-basis: 60%;
   flex-shrink: 0;
   border-left: 5px solid $primary-accent;
   border-bottom: 5px solid $primary-accent;
@@ -59,11 +85,12 @@
   position: relative;
   top: -50px;
   p, h2 {
-    padding: 10px 100px;
+    padding: 10px 50px 10px 50px;
   }
   h2 {
     color: $primary-accent;
     padding-top: 15px;
+    font-weight: 200;
   }
   p {
     &:last-of-type {
@@ -79,5 +106,52 @@
   img {
     object-fit: cover;
     height: 100%;
+  }
+}
+
+.blog-comments {
+  // display: grid;
+  grid-template-columns: repeat(auto-fit, calc(60% / 8));
+  gap: 20px;
+  
+  width:60%;
+  padding-left: 60px;
+  float: right;
+}
+.blog-comments-comment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, calc(60% / 8));
+}
+.blog-comments-picture {
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  padding: 15px;
+}
+.blog-comment-date {
+  color: $primary-accent;
+}
+.blog-comments-body {
+  grid-row-start: 2;
+  grid-column: 3 / -1;
+  padding: 15px;
+  .blog-comment-text {
+    padding: 10px 0;
+  }
+}
+.blog-comment-box {
+  clear: both;
+  width: 60%;
+  float: right;
+  position: relative;
+}
+
+
+.comment-form {
+  width: 100%;
+  padding: 60px;
+  input,
+  textarea {
+    background-color: $primary-color;
   }
 }

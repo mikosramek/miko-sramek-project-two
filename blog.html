@@ -61,32 +61,38 @@
             <h1>Blog</h1>
         </div> <!-- End of Wrapper -->
     </header>
-    <main>
+    <main class="clearfix">
+        <!-- Start of Blog Flex Container -->
         <div class="blog-flex-container">
             <aside class="blog-aside">
+                <!-- Start of Wrapper -->
                 <div class="blog-aside-wrapper">
+                    <!-- Start of Image Div -->
                     <div class="blog-aside-image">
                         <img src="./assets/blog-side-image.jpg" alt="A salmon filet on a bed of vegetables.">
-                    </div>
+                    </div> <!-- End of Image Div -->
+                    <!-- Start of Text Div -->
                     <div class="blog-aside-text">
-                        <h4>Featured restaurants</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde qui debitis ea nobis aliquam
+                        <h4 class="blog-aside-text-justified">Featured restaurants</h4>
+                        <p class="blog-aside-text-justified">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Unde qui debitis ea nobis aliquam
                             dolores?</p>
-                            <h4>Recent posts</h4>
-                            <ul class="blog-aside-posts">
-                                <li>Lorem, ipsum dolor.</li>
-                                <li>Lorem ipsum dolor sit amet.</li>
-                                <li>Lorem, ipsum dolor.</li>
-                                <li>Lorem ipsum dolor sit amet consectetur.</li>
-                            </ul>
-                    </div>
-                </div>
+                        <h4>Recent posts</h4>
+                        <ul class="blog-aside-posts">
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur.</li>
+                        </ul>
+                    </div> <!-- End of Text Div -->
+                </div> <!-- End of Wrapper -->
             </aside>
             <section class="blog-post">
+                <!-- Start of Image Div -->
                 <div class="blog-post-header-image shadow-left">
                     <img src="./assets/blog-post-image.jpg"
                         alt="A server placing flowers into a vase on a restaurant table.">
-                </div>
+                </div> <!-- End of Image Div -->
                 <h2>Employment opportunities</h2>
                 <p class="blog-post-date">Monday October 30, 2019 by Miko</p>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus dolores ad sint voluptates,
@@ -104,7 +110,51 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A iste beatae magnam dolor quaerat
                     repellendus?</p>
             </section>
-        </div>
+        </div> <!-- End of Blog Flex Container -->
+        <section class="blog-comments">
+            <h3>Comments:</h3>
+            <!-- Start of Grid Div -->
+            <div class="blog-comments-comment-grid">
+                <!-- Start of Picture Div -->
+                <div class="blog-comments-picture">
+                    <img src="./assets/comment-1.jpg" alt="The commenter's profile picture.">
+                </div> <!-- End of Picture Div -->
+                <!-- Start of Body Div -->
+                <div class="blog-comments-body">
+                    <p class="blog-comment-date">October 31st, 2019 by Ali</p>
+                    <p class="blog-comment-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+                        pariatur animi voluptatum qui atque, perspiciatis est nulla a mollitia autem aperiam sunt
+                        possimus tempore temporibus dolorem amet vero ducimus velit eligendi ex architecto quasi vel!
+                        Non optio exercitationem architecto. Minima deserunt rerum modi enim temporibus praesentium
+                        quidem hic mollitia iure!</p>
+                </div> <!-- End of Body Div -->
+            </div> <!-- End of Grid Div -->
+            <div class="blog-comments-comment-grid">
+                <!-- Start of Picture Div -->
+                <div class="blog-comments-picture">
+                    <img src="./assets/comment-2.jpg" alt="The commenter's profile picture.">
+                </div> <!-- End of Picture Div -->
+                <div class="blog-comments-body">
+                    <p class="blog-comment-date">November 1st, 2019 by Lisa</p>
+                    <p class="blog-comment-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ab sit
+                        at veniam eveniet eaque laboriosam architecto deleniti nobis ratione!</p>
+                </div> <!-- End of Body Div -->
+            </div> <!-- End of Grid Div -->
+        </section>
+        <section class="blog-comment-box">
+            <form action="submit" class="form comment-form">
+                <form action="submit" class="clearfix">
+                    <label for="name" class="visuallyhidden">Name:</label>
+                    <input type="text" name="name" id="name" class="form-user" placeholder="Name" required>
+                    <label for="email" class="visuallyhidden">Email:</label>
+                    <input type="email" name="email" id="email" class="form-user" placeholder="Email" required>
+                    <label for="comment" class="visuallyhidden">Comment:</label>
+                    <textarea type="text" name="comment" id="comment" class="form-message"
+                        placeholder="Comment" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </form>
+        </section>
     </main>
     <footer>
         <div class="wrapper">

@@ -50,8 +50,18 @@ h1 {
   position: absolute;
   right: 0;bottom: -150px;
   width: 50%;
-}
 
+  animation: slide-in 1s;
+  z-index: 2;
+}
+@keyframes slide-in{
+  from {
+    bottom: -500px;
+  }
+  to {
+    bottom: -150px;
+  }  
+}
 
 ul:hover{
   .page-active::after,

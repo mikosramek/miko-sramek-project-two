@@ -9,6 +9,7 @@ $circle-stroke: #FFD300;//#fff;//#F93011;
 
 
 $translucent-black: transparentize($primary-black, 0.4);
+$dark-accent: scale-color($primary-accent, $lightness: -50%);
 
 $font-paragraph: 'Barlow', sans-serif;;
 $font-primary: 'Josefin Sans', sans-serif;
@@ -16,6 +17,6 @@ $font-primary: 'Josefin Sans', sans-serif;
 
 $first-break: 1250px;
 $second-break: 1125px;
-$third-break: 980px;
+$third-break: 900px;
 $fourth-break: 750px;
 $fifth-break: 400px;
