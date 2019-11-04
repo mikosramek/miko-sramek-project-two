@@ -546,6 +546,13 @@ main {
   border-bottom: 1px solid #FFD300;
 }
 
+@media only screen and (max-width: 450px) {
+  .form-user {
+    float: none;
+    width: calc(100% - 20px);
+  }
+}
+
 .form-message {
   border: 1px solid #FFD300;
   clear: both;
@@ -1049,7 +1056,9 @@ main {
 
 @media only screen and (max-width: 900px) {
   .contact-form {
-    position: static;
+    position: relative;
+    right: 0;
+    top: -100px;
     width: 100%;
   }
 }

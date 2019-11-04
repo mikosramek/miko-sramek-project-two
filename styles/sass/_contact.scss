@@ -37,9 +37,11 @@
   width: 50%;
   padding: 25px;
   @include media($third-break){
-    position: static;
+    position: relative;
+    right: 0;top: -100px;
     width: 100%;
   }
+  
   input,
   textarea {
     background-color: $secondary-color;

@@ -50,6 +50,7 @@ h1 {
   position: absolute;
   right: 0;bottom: -150px;
   width: 50%;
+  // max-width: calc(1280px / 2);
 
   animation: slide-in 1s;
   z-index: 2;
