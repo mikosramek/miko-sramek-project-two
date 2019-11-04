@@ -23,6 +23,10 @@ main {
     color: $primary-white;
     margin: 10px;
     padding: 20px;
+    &::placeholder {
+      color: white;
+      opacity: 0.8;
+    }
   }
   button {
     border: none;
@@ -33,7 +37,9 @@ main {
     width: calc(100% - 20px);
     background-color: $primary-accent;
     padding: 0px 5px; 
+
   }
+  
 }
 
 .form-user {

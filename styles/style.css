@@ -247,6 +247,36 @@ html {
   left: 0;
 }
 
+@-webkit-keyframes small-wiggle {
+  0%, 50%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  75% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+}
+
+@keyframes small-wiggle {
+  0%, 50%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  75% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+}
+
 /* Type Styles */
 * {
   font-family: "Josefin Sans", sans-serif;
@@ -528,6 +558,30 @@ main {
   padding: 20px;
 }
 
+.form input::-webkit-input-placeholder,
+.form textarea::-webkit-input-placeholder {
+  color: white;
+  opacity: 0.8;
+}
+
+.form input:-ms-input-placeholder,
+.form textarea:-ms-input-placeholder {
+  color: white;
+  opacity: 0.8;
+}
+
+.form input::-ms-input-placeholder,
+.form textarea::-ms-input-placeholder {
+  color: white;
+  opacity: 0.8;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  color: white;
+  opacity: 0.8;
+}
+
 .form button {
   border: none;
   text-transform: uppercase;
@@ -639,6 +693,16 @@ main {
   margin-left: 2%;
 }
 
+.index-feature-section .index-feature:hover .index-feature-icon {
+  -webkit-animation: small-wiggle 1s infinite ease-in;
+          animation: small-wiggle 1s infinite ease-in;
+}
+
+.index-feature-section .index-feature:hover .index-feature-icon i {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .index-feature-section .index-feature-flex-container {
   margin-bottom: 50px;
   display: -webkit-box;
@@ -667,6 +731,10 @@ main {
   left: 0;
   text-align: center;
   padding-top: 12.5px;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
 .index-contest h2,

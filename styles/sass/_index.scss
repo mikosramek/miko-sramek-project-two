@@ -52,6 +52,13 @@
       margin-left: 2%;
     }
   }
+  .index-feature:hover .index-feature-icon{
+    
+    animation: small-wiggle 1s infinite ease-in;
+    i {
+      transform: scale(1.1);
+    }
+  }
   .index-feature-flex-container {
     margin-bottom: 50px;
     display: flex;
@@ -69,11 +76,13 @@
     background-color: $primary-accent;
 
     margin: 0px 15px 20px 0;
+    
   }
   i {
     @include absolute-fill;
     text-align: center;
     padding-top: 12.5px;
+    transition: transform 0.2s;
   }
 }
 .index-contest h2,
