@@ -21,6 +21,9 @@ header {
     top: -5px;
     bottom: 5px;
     z-index: -1;
+    @include media($fifth-break){
+      width: 340px;
+    }
   }
   ul.flex-container {
     display: flex;

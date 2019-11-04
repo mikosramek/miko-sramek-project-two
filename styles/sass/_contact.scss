@@ -1,13 +1,24 @@
 .contact {
   position: relative;
   padding-bottom: 150px;
+  @include media($third-break){
+    padding-bottom: 50px;
+  }
 }
 .contact-social-links {
   padding-top: 50px;
   display: flex;
-  // justify-content: space-between;
+  @include media($third-break){
+    padding-top: 0;
+  }
+  @include media($final-break){
+    justify-content: space-around;
+  }
   li {
     margin-right: 25px;
+    @include media($final-break){
+      margin: 0;
+    }
   }
   i {
     color: $primary-accent;
@@ -20,6 +31,9 @@
   width: 30%;
   @include media($third-break){
     width: 100%;
+  }
+  @include media($final-break){
+    text-align: center;
   }
   >li {
     padding-bottom: 25px;

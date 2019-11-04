@@ -15,8 +15,9 @@ $font-paragraph: 'Barlow', sans-serif;;
 $font-primary: 'Josefin Sans', sans-serif;
 
 
-$first-break: 1250px;
+$first-break: 1170px; //index
 $second-break: 1125px;
-$third-break: 900px;
-$fourth-break: 750px;
-$fifth-break: 450px;
+$third-break: 950px; //used in index.scss & contact.scss
+$fourth-break: 870px; //used in blog.scss
+$fifth-break: 580px; // used in main.scss
+$final-break: 380px;
