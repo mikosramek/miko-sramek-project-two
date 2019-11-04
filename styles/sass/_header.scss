@@ -24,9 +24,9 @@ header {
     @include media($fifth-break){
       width: 340px;
     }
-  }
-  ul.flex-container {
-    display: flex;
+    @include media($final-break){
+      width: 275px;
+    }
   }
   li {
     margin-right: 25px;
@@ -36,6 +36,9 @@ header {
 h1 {
   padding-top: 100px;
   margin: 0;
+}
+.desktop-nav {
+  display: flex;
 }
 .index-header {
   background-image: url("../assets/home-header.jpg");
@@ -55,17 +58,10 @@ h1 {
   width: 50%;
   // max-width: calc(1280px / 2);
 
-  animation: slide-in 1s;
+  animation: slide-in 1s, fade-in 1s;
   z-index: 2;
 }
-@keyframes slide-in{
-  from {
-    bottom: -500px;
-  }
-  to {
-    bottom: -150px;
-  }  
-}
+
 
 ul:hover{
   .page-active::after,
@@ -118,3 +114,80 @@ a:hover > .circle>path,
 a:focus > .circle>path {
   stroke-dashoffset: 0;
 } 
+
+
+/* Mobile Nav */
+.desktop-nav {
+  @include media($fifth-break){
+    display: none;
+  }
+}
+
+.mobile-nav {
+  display: none;
+  @include media($fifth-break){
+    display: block;
+  }
+}
+
+.mobile-nav-hamburger,
+.mobile-nav-ex {
+  display: none;
+  left: 0px;
+  top: 0; 
+  width: 50px;
+  height: 50px;
+  background-color: $primary-accent;
+  
+  border-radius: 30px;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+
+  font-size: 3rem;
+  
+  color: $primary-black;
+  position: fixed;
+
+  transition: all 1s;
+  z-index: 5;
+  overflow: hidden;
+  @include media($fifth-break){
+    display: inline; 
+  }
+  i {
+    @include absolute-fill();
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  &:hover { 
+    width: 100%;
+    height: 40%;
+    top: 0;right: 0;bottom: 0;left: 0;
+  }
+}
+.page-active {
+  color: $primary-white;
+}
+.mobile-nav {
+  margin-left: 35px;
+  margin-top: 60px;
+  li {
+    padding: 10px 5px;
+  }
+  &:hover {
+    .page-active {
+      color: $primary-black;
+    }
+  }
+  &:hover a:hover {
+    color: $primary-white;
+  }
+  
+}
+
+.mobile-nav-background-show {
+  top: 0;right: 0;bottom: 0;left: 0;
+}
+.mobile-nav-show {
+  display: block;
+}

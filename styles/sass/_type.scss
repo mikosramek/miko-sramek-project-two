@@ -15,6 +15,9 @@ h1 {
     @include media($fifth-break){
         font-size: 5rem;
     }
+    @include media($final-break){
+        font-size: 4rem;
+    }
 }
 
 h2 {

@@ -22,7 +22,8 @@
         <!-- Start of Wrapper -->
         <div class="wrapper">
             <nav>
-                <ul class="flex-container">
+                <!-- Start of Nav Flex Container -->
+                <ul class="flex-container desktop-nav">
                     <li class="page-active"><a href="./index.html">Home</a></li>
                     <li class="page-not-active"><a href="./index.html#feature-section">
                             About
@@ -48,7 +49,31 @@
                             </svg>
                         </a>
                     </li>
-                </ul> <!-- End of Flex Container -->
+                </ul> <!-- End of Nav Flex Container -->
+            </nav>
+
+            <nav>
+                <div class="mobile-nav-hamburger">
+                    <i class="fas fa-bars"></i>
+                    
+                    <!-- <div class="mobile-nav-ex">
+                    <i class="fas fa-times"></i>
+                </div>   -->
+                    <ul class="mobile-nav">
+                        <li class="page-active">
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="./index.html#feature-section">About</a>
+                        </li>
+                        <li>
+                            <a href="./blog.html">Blog</a>
+                        </li>
+                        <li>
+                            <a href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
             <h1>The <span>Restaurant</span> Mall</h1>
             <div class="header-overlay-image">
@@ -123,7 +148,7 @@
             <!-- <div class="wrapper"> -->
             <article class="index-blog-post">
                 <div class="index-blog-left index-blog-post-image">
-                    <!-- !!!! TO DO: ALT TEXT !!!! -->  
+                    <!-- !!!! TO DO: ALT TEXT !!!! -->
                     <img src="./assets/left-image.jpg" alt="" class="shadow-right">
                 </div>
                 <div class="index-blog-post-text index-blog-right">
@@ -213,6 +238,19 @@
             <p>Copyright © 2019 Juno College</p>
         </div>
     </footer>
+
+    <!-- jQuery -->
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <!-- Load any other plugins here: -->
+
+
+    <!-- Main Script -->
+    <script>
+        $(function () {
+            $('.hamburger-bottom').attr("y1", 182.5);
+            $('.hamburger-top').attr("y2", 1.047);
+        });
+    </script>
 </body>
 
 </html>

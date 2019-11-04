@@ -9,3 +9,19 @@
     transform: rotate(-5deg);
   }
 }
+@keyframes slide-in{
+  from {
+    bottom: -500px;
+  }
+  to {
+    bottom: -150px;
+  }  
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
