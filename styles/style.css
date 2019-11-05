@@ -1609,6 +1609,10 @@ main {
           animation: small-wiggle 1s infinite;
 }
 
+.contact .wrapper {
+  position: relative;
+}
+
 .contact-social-links {
   padding-top: 50px;
   display: -webkit-box;
@@ -1683,9 +1687,10 @@ main {
 .contact-form {
   position: absolute;
   background: #171B0E;
-  right: 5%;
+  right: 0;
   top: -100px;
   width: 50%;
+  max-width: 800px;
   padding: 25px;
 }
 

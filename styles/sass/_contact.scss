@@ -12,7 +12,9 @@
     display: inline-block;
     animation: small-wiggle 1s infinite;
   }
-  
+  .wrapper {
+    position: relative;
+  }
 }
 
 .contact-social-links {
@@ -66,9 +68,10 @@
 .contact-form {
   position: absolute;
   background: $secondary-color;
-  right: 5%;
+  right: 0;
   top: -100px;
   width: 50%;
+  max-width: 800px;
   padding: 25px;
   @include media($third-break){
     position: relative;
