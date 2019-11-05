@@ -41,8 +41,9 @@
 
 .index-feature-section {
   padding: 200px 0 100px;
-  @include media($final-break){
+  @include media($fifth-break){
     padding-bottom: 50px;
+    padding-top: 50px;
   }
   .flex-container {
     display: flex;
@@ -149,9 +150,6 @@
     @include media($first-break){
       margin-top: 25px;
     }
-    @include media($final-break){
-      // margin-top: 0;
-    }
   }
   img {
     max-height: 400px;
@@ -195,9 +193,6 @@
 .index-blog-left.index-blog-post-image {
   position: relative;
   top: -45px;
-  @include media($third-break){ 
-    top: -45px;
-  }
   @include media($final-break){
     top: 0;
   }

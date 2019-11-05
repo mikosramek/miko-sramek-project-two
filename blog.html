@@ -20,6 +20,7 @@
     <header id="header" class="blog-header">
         <!-- Start of Wrapper -->
         <div class="wrapper">
+            <!-- Start of Desktop Nav -->
             <nav>
                 <ul class="flex-container desktop-nav">
                     <li>
@@ -57,7 +58,8 @@
                         </a>
                     </li>
                 </ul> <!-- End of Flex Container -->
-            </nav>
+            </nav> <!-- End of Desktop Nav -->
+            <!-- Start of Mobile Nav -->
             <nav class="mobile-nav">
                 
                 <input type="checkbox" name="menu-toggle" id="menu-toggle" class="mobile-nav-checkbox">
@@ -66,7 +68,7 @@
                 <!-- Start of Expanding Div -->
                 <div class="mobile-exp">
                     <ul class="mobile-nav-ul">
-                        <li class="page-active">
+                        <li>
                             <a href="./index.html">Home</a>
                         </li>
                         <li>
@@ -80,7 +82,7 @@
                         </li>
                     </ul>
                 </div> <!-- End of Expanding Div -->
-            </nav>
+            </nav> <!-- End of Mobile Nav -->
             <h1>Blog</h1>
         </div> <!-- End of Wrapper -->
     </header>
@@ -170,7 +172,7 @@
         <section class="blog-comment-box">
             <!-- Start of Wrapper -->
             <div class="wrapper">
-                <form action="submit" class="form comment-form">
+                <div class="form comment-form">
                     <form action="submit" class="clearfix">
                         <label for="name" class="visuallyhidden">Name:</label>
                         <input type="text" name="name" id="name" class="form-user" placeholder="Name" required>
@@ -181,7 +183,7 @@
                             placeholder="Comment" required></textarea>
                         <button type="submit">Submit</button>
                     </form>
-                </form>
+                </div>
             </div> <!-- End of Wrapper -->
         </section>
     </main>

@@ -4,6 +4,12 @@
   @include media($third-break){
     padding-bottom: 50px;
   }
+  p {
+    display: inline-block;
+  }
+  p:hover {
+    animation: small-wiggle 1s infinite;
+  }
 }
 .contact-social-links {
   padding-top: 50px;
@@ -66,3 +72,5 @@
     background-color: $secondary-color;
   }
 }
+
+// a[href^='mailto']:hover {

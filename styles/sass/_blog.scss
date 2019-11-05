@@ -41,6 +41,7 @@
   // width: 90%; 
   display: grid;
   grid-template-columns: repeat(5, 20%);
+  max-width: calc(1280px / 2);
   // margin-left: 20px;
   margin-right: 80px;
   @include media($fourth-break){
@@ -121,7 +122,10 @@
     padding: 0;
   }
   p, h2 {
-    padding: 10px 50px 10px 50px;
+    padding: 10px 50px;
+    @include media($final-break){
+      padding: 10px 10px;
+    }
   }
   h2 {
     color: $primary-accent;
@@ -141,13 +145,13 @@
   top: -50px;
   img {
     object-fit: cover;
+    object-position: top;
     height: 100%;
   }
 }
 
 .blog-comments {
   width:60%;
-  // padding-left: 60px;
   float: right;
   @include media($fourth-break){
     width: 100%;
@@ -156,7 +160,7 @@
 }
 .blog-comments-comment-grid {
   display: grid;
-  grid-template-columns: 20%,80%;//repeat(auto-fit, 1fr);
+  grid-template-columns: 20%,80%;
 }
 .blog-comments-picture {
   grid-row-start: 1;
