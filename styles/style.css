@@ -812,6 +812,15 @@ main {
   padding: 0px 5px;
 }
 
+.form button:hover, .form button:focus {
+  background-color: #0F0F0F;
+  color: #FFD300;
+}
+
+.form button:focus {
+  outline: 1px dotted #FFD300;
+}
+
 .form-user {
   border: none;
   width: calc(50% - 20px);
@@ -1593,7 +1602,9 @@ main {
   display: inline-block;
 }
 
-.contact p:hover {
+.contact a[href^='mailto']:hover,
+.contact a[href^='mailto']:focus {
+  display: inline-block;
   -webkit-animation: small-wiggle 1s infinite;
           animation: small-wiggle 1s infinite;
 }
@@ -1635,7 +1646,9 @@ main {
   transition: all 0.3s;
 }
 
-.contact-social-links i:hover {
+.contact-social-links a[href^='https://www.']:focus i,
+.contact-social-links a[href^='https://www.']:hover i {
+  display: inline-block;
   color: #fff;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);

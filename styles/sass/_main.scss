@@ -37,7 +37,14 @@ main {
     width: calc(100% - 20px);
     background-color: $primary-accent;
     padding: 0px 5px; 
-
+    &:hover,
+    &:focus {
+      background-color: $primary-black;
+      color: $primary-accent;
+    }
+    &:focus {
+      outline: 1px dotted $primary-accent;
+    }
   }
   
 }

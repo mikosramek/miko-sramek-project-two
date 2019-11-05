@@ -7,10 +7,14 @@
   p {
     display: inline-block;
   }
-  p:hover {
+  a[href^='mailto']:hover,
+  a[href^='mailto']:focus{
+    display: inline-block;
     animation: small-wiggle 1s infinite;
   }
+  
 }
+
 .contact-social-links {
   padding-top: 50px;
   display: flex;
@@ -26,11 +30,16 @@
       margin: 0;
     }
   }
+
   i {
     color: $primary-accent;
     font-size: 2.5rem;
     transition: all 0.3s;
-    &:hover {
+  }
+  a[href^='https://www.']:focus,
+  a[href^='https://www.']:hover{
+    i {
+      display: inline-block;
       color: $primary-white;
       transform: scale(1.1);
     }
