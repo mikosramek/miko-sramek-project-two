@@ -640,6 +640,7 @@ a:focus > .circle > path {
   top: 0;
   width: 70px;
   height: 70px;
+  min-height: 0px;
   background-color: #FFD300;
   border-radius: 0 0 0 30px;
   font-size: 3rem;
@@ -698,6 +699,7 @@ a:focus > .circle > path {
 .mobile-nav-checkbox:checked ~ .mobile-exp {
   width: 100vw;
   height: 40vh;
+  min-height: 275px;
 }
 
 .mobile-nav-checkbox:checked ~ .mobile-exp .mobile-nav-ul {
@@ -1261,7 +1263,6 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 4%;
 }
 
 @media only screen and (max-width: 580px) {
@@ -1270,6 +1271,23 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+.index-gallery .flex-container li:nth-of-type(2) {
+  margin: 0 4%;
+}
+
+@media only screen and (max-width: 870px) {
+  .index-gallery .flex-container li:nth-of-type(1) {
+    margin-right: 4%;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .index-gallery .flex-container li:nth-of-type(1) {
+    margin-right: 0;
+    margin-bottom: 4%;
   }
 }
 
