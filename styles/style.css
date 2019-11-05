@@ -735,6 +735,16 @@ a:focus > .circle > path {
   transition: all 1s;
 }
 
+.mobile-nav-toggle::after {
+  content: "Menu";
+  text-transform: uppercase;
+  font-size: 1rem;
+  position: absolute;
+  right: 13px;
+  top: 40px;
+  z-index: 10;
+}
+
 /* Main Styles */
 main {
   background-color: #2B331B;
