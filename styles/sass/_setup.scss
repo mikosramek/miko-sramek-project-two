@@ -9,4 +9,4 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 .visuallyhidden:not(:focus):not(:active) { position: absolute !important; height: 1px; width: 1px; overflow: hidden; clip: rect(1px 1px 1px 1px); /* IE6, IE7 */ clip: rect(1px, 1px, 1px, 1px); white-space: nowrap; /* added line */}
 
 .skip-link { position:absolute;left:-1000px;top:5px;z-index:999;background:white;color:black; }
-.skip-link:focus { left: 0; }
+.skip-link:focus { left: 0; color:black; font-size: 3rem;}

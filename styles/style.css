@@ -245,6 +245,8 @@ html {
 
 .skip-link:focus {
   left: 0;
+  color: black;
+  font-size: 3rem;
 }
 
 @-webkit-keyframes small-wiggle {
@@ -541,6 +543,7 @@ h1 {
   right: 0;
   bottom: -150px;
   width: 50%;
+  max-width: calc(1500px);
   -webkit-animation: slide-in 1s, fade-in 1s;
           animation: slide-in 1s, fade-in 1s;
   z-index: 2;
@@ -693,7 +696,8 @@ a:focus > .circle > path {
 }
 
 .mobile-nav-checkbox {
-  display: none;
+  position: absolute;
+  right: -1000px;
 }
 
 .mobile-nav-checkbox:checked ~ .mobile-exp {
@@ -707,7 +711,8 @@ a:focus > .circle > path {
 }
 
 .mobile-nav-ul a:focus {
-  outline: white 1px dotted;
+  outline: #fff 1px dotted;
+  color: #fff;
 }
 
 .mobile-nav-checkbox:checked + .mobile-nav-toggle::before {
