@@ -609,6 +609,12 @@ a:focus > .circle > path {
 
 .mobile-nav {
   display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
 }
 
 @media only screen and (max-width: 580px) {
@@ -617,8 +623,7 @@ a:focus > .circle > path {
   }
 }
 
-.mobile-nav-hamburger,
-.mobile-nav-ex {
+.mobile-exp {
   display: none;
   left: 0px;
   top: 0;
@@ -630,7 +635,6 @@ a:focus > .circle > path {
   border-bottom-right-radius: 0;
   font-size: 3rem;
   color: #0F0F0F;
-  position: fixed;
   -webkit-transition: all 1s;
   transition: all 1s;
   z-index: 5;
@@ -638,14 +642,12 @@ a:focus > .circle > path {
 }
 
 @media only screen and (max-width: 580px) {
-  .mobile-nav-hamburger,
-  .mobile-nav-ex {
-    display: inline;
+  .mobile-exp {
+    display: block;
   }
 }
 
-.mobile-nav-hamburger i,
-.mobile-nav-ex i {
+.mobile-exp i {
   position: absolute;
   top: 0;
   right: 0;
@@ -655,34 +657,24 @@ a:focus > .circle > path {
   margin-left: 10px;
 }
 
-.mobile-nav-hamburger:hover,
-.mobile-nav-ex:hover {
-  width: 100%;
-  height: 40%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
 .page-active {
   color: #fff;
 }
 
-.mobile-nav {
+.mobile-nav-ul {
   margin-left: 35px;
   margin-top: 60px;
 }
 
-.mobile-nav li {
+.mobile-nav-ul li {
   padding: 10px 5px;
 }
 
-.mobile-nav:hover .page-active {
+.mobile-nav-ul:hover .page-active {
   color: #0F0F0F;
 }
 
-.mobile-nav:hover a:hover {
+.mobile-nav-ul:hover a:hover {
   color: #fff;
 }
 
@@ -695,6 +687,49 @@ a:focus > .circle > path {
 
 .mobile-nav-show {
   display: block;
+}
+
+.mobile-nav-checkbox {
+  display: none;
+}
+
+.mobile-nav-checkbox:checked ~ .mobile-exp {
+  width: 100%;
+  height: 40%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.mobile-nav-checkbox:checked ~ .mobile-exp .mobile-nav-ul {
+  display: block;
+}
+
+.mobile-nav-ul {
+  display: none;
+}
+
+.mobile-nav-ul a:focus {
+  outline: white 1px dotted;
+}
+
+.mobile-nav-checkbox:checked + .mobile-nav-toggle::before {
+  content: "\f00d";
+}
+
+.mobile-nav-toggle::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Pro";
+  content: "\f0c9";
+  font-size: 2.5rem;
+  position: absolute;
+  left: 12px;
+  top: 10px;
 }
 
 /* Main Styles */
@@ -893,6 +928,12 @@ main {
   }
   .index-feature-section .flex-container li:nth-of-type(2n) .index-feature-icon {
     margin: 0px 0px 20px 15px;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .index-feature-section .flex-container li:nth-of-type(2n) {
+    margin-left: 0;
   }
 }
 
